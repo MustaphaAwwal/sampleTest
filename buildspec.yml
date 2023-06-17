@@ -6,10 +6,11 @@ phases:
     commands:
       - cd frontend
       - npm install
+      - echo "$PWD"
   build:
     commands:
+      - echo "$PWD"
       - npm run build
-      - pwd
       - cd ..
 artifacts:
   files:
