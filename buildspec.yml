@@ -10,7 +10,8 @@ phases:
   build:
     commands:
       - npm run build
+      - ls
       - cd ..
       - echo "$PWD"
-      - ls frontend/build
+      - ls frontend/
 
