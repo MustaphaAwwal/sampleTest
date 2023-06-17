@@ -14,4 +14,4 @@ phases:
       - cd ..
 artifacts:
   files:
-    - frontend/build/**/*
+    - frontend/build/
