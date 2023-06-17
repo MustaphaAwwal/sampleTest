@@ -6,11 +6,11 @@ phases:
     commands:
       - cd frontend
       - npm install
-      - cd ..
       - echo "$PWD"
   build:
     commands:
-      - echo "$PWD"
       - npm run build
+      - cd ..
+      - echo "$PWD"
       - ls frontend/build
 
