@@ -11,7 +11,5 @@ phases:
     commands:
       - echo "$PWD"
       - npm run build
-      - cd ..
-artifacts:
-  files:
-    - frontend/build/
+      - ls frontend/build
+
