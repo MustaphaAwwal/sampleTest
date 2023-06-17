@@ -9,12 +9,12 @@ phases:
   build:
     commands:
       - npm run build
-  # post_build:
-  #   commands:
-  #     - aws s3 cp --recursive --acl public-read ./dist s3://<bucket-name>/
-artifacts:
-  files:
-    - frontend/dist/**/*/
-  discard-paths: no
+  post_build:
+    commands:
+      - aws s3 cp --recursive --acl public-read ./dist/ s3://react-test-1231/
+# artifacts:
+#   files:
+#     - frontend/dist/**/*/
+#   discard-paths: no
  
 
