@@ -9,6 +9,8 @@ phases:
   build:
     commands:
       - npm run build
+      - pwd
+      - cd ..
 artifacts:
   files:
     - frontend/build/**/*
